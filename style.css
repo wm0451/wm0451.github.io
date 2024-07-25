@@ -1,0 +1,165 @@
+* {
+	position: absolute;
+	-webkit-user-select: none;
+	user-select: none;
+	padding: 0px;
+	margin: 0px;
+	border: 0;
+}
+
+canvas {
+	z-index: -1;
+}
+
+html, body {
+	position: relative;
+	height: 100%;
+	margin: 0;
+	overflow: hidden;
+	font-family: "thermal-variable", sans-serif;
+	font-variation-settings: "opsz" 100, "wght" 400;
+	cursor: default;
+	font-optical-sizing: auto;
+}
+
+.phys_container {
+	will-change: transform;
+	transform: translateZ(0);
+	cursor: move;
+}
+
+h1 {
+	font-size: 72pt;
+	font-family: "thermal-variable", sans-serif;
+	font-variation-settings: "opsz" 900, "wght" 600;
+	margin-block-start: 0em;
+	margin-block-end: 0em;
+	position:relative;
+	line-height: 1em;
+}
+
+h2 {
+	position: relative;
+	padding-bottom: 10px;
+}
+
+p {
+	position: relative;
+	line-height: 1.2em;
+}
+
+i {
+	position: relative;
+}
+
+.box {
+	width: 300px;
+}
+
+#phys_toggle {
+	width: 50px;
+	height: 50px;
+	float: right;
+	border-radius: 100px;
+	position: fixed;
+	right: 30px;
+	top: 30px;
+	
+	cursor: pointer;
+	transition: all 0.1s;
+	background-color: white;
+	border: 1px solid #000000;
+	box-shadow: 0px 2px 0px 0px #000000;
+	
+	font-size: 2em;
+	cursor: pointer;
+}
+
+#phys_toggle:hover {
+	transition: all 0.1s;
+	box-shadow: 0px 4px 0px 0px #000000;
+	transform: translateY(-2px);
+}
+
+#phys_toggle:active {
+	transition: all 0.1s;
+	box-shadow: 0px 0px 0px 0px #000000;
+	transform: translateY(2px);
+}
+
+#button_arrow {
+	left: 8px;
+	top: 6px;
+	cursor: pointer;
+}
+
+/*			page objects		*/
+#landing_mainHeader {
+	width: 445px;
+	height: 370px;
+	display: block;
+	top: 50px;
+	left: 30px;
+}
+
+#landing_para1 {
+	width: 500px;
+	display: block;
+	top: 500px;
+	left: 30px;
+}
+
+#landing_para2 {
+	width: 500px;
+	display: block;
+	top: 600px;
+	left: 30px;
+}
+
+#landing_ch1 {
+	left: 30px;
+	top: 800px;
+	width: 151px;
+}
+
+#landing_ch2 {
+	left: 189px;
+	top: 800px;
+	width: 139px;
+}
+
+#landing_ch3 {
+	left: 336px;
+	top: 800px;
+	width: 182px;
+}
+
+#landing_box1 {
+	left: 600px;
+	top: 100px;
+}
+
+#landing_box2 {
+	left: 600px;
+	top: 310px;
+}
+
+#landing_box3 {
+	left: 600px;
+	top: 490px;
+}
+
+#landing_box4 {
+	left: 1000px;
+	top: 100px;
+}
+
+#landing_box5 {
+	left: 1000px;
+	top: 310px;
+}
+
+#landing_box6 {
+	left: 1000px;
+	top: 490px;
+}

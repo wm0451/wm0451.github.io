@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8"/>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://use.typekit.net/ejt0vsi.css">
+
+<!--		include matter.js		-->
+<script src="matter.js"></script>
+
+</head>
+<body>
+
+<!--		landing page		-->
+<div id="landing">
+	<div id="landing_mainHeader" class="phys_container">
+		<h1>the digital—somatic design manifesto</h1>
+	</div>
+
+	<div id="landing_para1" class="phys_container">
+		<p>This manifesto is for those who keep their phone’s typing clicks on; those who scroll their documents around whilst they think; those who savour the feel of a mechanical switch; those who miss the ubiquity of skeuomorphism and for those who relish in humane design.</p>
+	</div>
+	<div id="landing_para2" class="phys_container">
+		<p>It’s for software designers, web developers and interface creators who want their craft to inspire and comfort. It’s a set of guiding principles meant to quantify the innately, sensorially <i>pleasing</i> aspects of interactive design.</p>
+	</div>
+	
+	<div class="phys_container box" id="landing_box1">
+		<h2>the physical-virtual</h2>
+		<p>To bridge the gap between the real and intangible requires an understanding of what makes an item enjoyable to interact with. The best UX is created by a designer who lets themselves step away from their computer and discover what works in the real world.</p>
+	</div>
+	<div class="phys_container box" id="landing_box2">
+		<h2>the performance problem</h2>
+		<p>Unresponsive software bogs down the mind as much as it slows down one’s workflow. Design lightweight. If a user fears that they’ll break the interface without due care, they'll feel uncomfortable.</p>
+	</div>
+	<div class="phys_container box" id="landing_box3">
+		<h2>the digital fidget</h2>
+		<p>We feel the most at home using an interface when we can 'play' with it, as one might with a stray pencil or a loose fixture as their mind wanders. Remember that many users will interact with an interface in unexpected ways.</p>
+	</div>
+	<div class="phys_container box" id="landing_box4">
+		<h2>the free interaction</h2>
+		<p>The “one free interaction” is a prospective design pattern conceptualised by Chris Noessel in 2008. The “free” interaction is a software feature that does nothing to the document’s content, but feels nice for the user to perform.</p>
+	</div>
+	<div class="phys_container box" id="landing_box5">
+		<h2>the other senses</h2>
+		<p>Not everyone will want to hear audio flourishes or haptic feedback, but they can be just as important as visuals for how an interaction feels. Think beyond visual feedback.</p>
+	</div>
+	<div class="phys_container box" id="landing_box6">
+		<h2>the design future</h2>
+		<p>Don't restrict yourself to imitating designs that have worked in the past. Everything that we consider ubiquitous had to be invented by someone first. </p>
+	</div>
+
+</div>
+
+<!--		play audio on click		-->
+<audio id="button_down" src="button_down.wav"></audio>
+<audio id="button_up" src="button_up.wav"></audio>
+<script>
+	function button_down(){
+		var audio = document.getElementById("button_down");
+		audio.play();
+	}
+	function button_up(){
+		var audio = document.getElementById("button_up");
+		audio.play();
+	}
+</script>
+
+<!--		physics implementation		-->
+<script src="physics.js"></script>
+<script>phys_init();</script>
+
+<!--		physics toggle			-->
+<button id="phys_toggle" onclick="togglePhysics()" onmousedown="button_down()" onmouseup="button_up()">
+	<div id="button_arrow">▼</div>
+</button>
+
+</body>
+</html> 
